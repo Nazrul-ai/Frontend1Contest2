@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Basic Library System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="nav-bar">
+
+        <a   href="#Book-section">Books</a>
+        <a href="#register-section">Register</a>
+    </div>
+    <section id="Book-section">
+    <table >
+        <thead >
+            <tr>
+                <th>Book ID</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Availabilty</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <!-- <div class="row-1"> -->
+
+            
+            <tr class="row-1">
+                
+                <td>1</td>
+                <td >
+                    <table >
+                        <tr >
+                            <td>The Notebook</td>
+                            </tr>
+                            <tr>
+
+                                <td>Publication Date: October 1, 1996</td>
+                            </tr>
+                            <tr>
+
+                                <td>Page Count: 214</td>
+                            </tr>
+                            <tr>
+
+                                <td>ISBN: 978-0-446-52080-5</td>
+                            </tr>
+                        
+                        <!-- </tr> -->
+                    </table>
+
+                    <td>Nicholas Sparks</td>
+                    <td>Love</td>
+                    <td>Available</td>
+                </td>
+            </tr>
+        <!-- </div> -->
+            <tr class="row-2">
+            <td>2</td>
+            <td>
+                <table >
+                    <div>
+
+                        <tr>
+                            <td>The Girl on the Train</td>
+                        </tr>
+                        <tr>
+                            <td>Publication Date: January 13, 2015</td>  
+                        </tr>
+                        <tr>
+                            <td>Page Count 336</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN: 978-1-592-40718-8</td>
+                        </tr>
+                    </div>
+                
+                 
+                  
+                </table>
+                <td> Paula Hawkins</td>
+                <td>Thriller</td>
+                <td>Not Available</td>
+            </td>
+        </tr>
+        <tr class="row-1">
+            <td>3</td>
+            <td>
+                <table>
+                    <tr>
+                        <td>To Kill a Mockingbird</td>
+                    </tr>
+                    <tr>
+                        <td>Published on: July 11, 1960</td>
+
+                    </tr>
+                    <tr>
+                        <td>Page Count: 281</td>
+                    </tr>
+                    <tr>
+                        <td>ISBN: 978-0-06-112008-4</td>
+                    </tr>
+
+                </table>
+                <td>Harper Lee</td>
+                <td>Fiction</td>
+                <td>Available</td>
+            </td>
+        </tr>
+        <tr class="row-2">
+            <td>4</td>
+            <td>
+                <table>
+                    <tr>
+                        <td>1984</td>
+                    </tr>
+                     <tr>
+                        <td>Publication Date: June 8, 1949</td>
+                     </tr>
+                     <tr>
+                        <td>Page Count: 328</td>
+                     </tr>
+                     <tr>
+                        <td>ISBN: 978-0-452-28423-4</td>
+                     </tr>
+                </table>
+                <td>George Orwell</td>
+                <td>Fiction</td>     
+                <td>Available</td> 
+            </td>
+        </tr>
+        </tr>
+        <tr id="last-row">
+
+        
+        <td>5</td>
+        <td>
+            <table >
+                <tr>
+                    <td>Publication Date: July 16, 1951</td>
+                    </tr>
+                    <tr>
+
+                        <td>Page Count: 277</td>
+                    </tr>
+                    <tr>
+
+                        <td>ISBN: 978-0-316-76948-4</td>
+                    </tr>
+
+               
+            </table>
+            <td> J.D. Salinger</td>
+            <td>Fiction</td>
+            <td>Available</td>
+        </td>
+    </tr>
+
+        </tbody>
+
+
+    </table>
+</section>
+    <section id="text">
+    <div id="form-bg">
+        <section id="register-section">
+            
+            <form action="php/login" method="post">
+                <div id="register"><b>Reigster</b></div>
+                <label class="input1" for="first_name"><b>First Name:</b></label>
+                
+                <input class="form" type="text" id="first_name" name="first_name" placeholder="Please Enter your First Name" required>
+                <br>
+                <br>
+                
+                <label  class="input1" for="last_name">Last Name:</label>
+                
+                <input class="form" type="text" id="last_name" name="last_name" placeholder="Please Enter your Last Name" required>
+                <br>
+                <br>
+                
+                <label class="input1" for="Email">Email:</label>
+                
+                <input class="form" class="input1" type="email" id="Email" name="Email" placeholder="Please Enter your Email" required>
+                <br>
+                <br>
+                
+                <label class="input1" for="DOB">Date of Birth:</label>
+                
+                <input class="form" type="date" id="DOB" name="DOB"  placeholder="Please Enter your Date of Birth" required>
+                <br>
+                <br>
+                
+                <label class="input1" for="password">Password</label>
+                
+                <input class="form" type="password" id="password" name="password" placeholder="Please Enter your Password" required><br>
+                <br>
+                <br>
+                <label class="input1" for="confirm_password"> Confirm Password:</label>
+                <input class="form" type="password" id="confirm_password" name="confirm_password" placeholder="Please confirm your Password " required>
+                <br>
+                <br>
+                <label class="input1" for="age">Age:</label>
+                
+                <input class="form" type="number" id="age" name="age" min="5" max="100" placeholder="Please Enter your Age" required>
+                <br>
+                <br>
+                <button type="submit" class="btn">Register</button>
+                
+                
+            </form>
+        </section>
+</div>
+</section>
+</body>
+</html>
